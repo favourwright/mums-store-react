@@ -1,16 +1,16 @@
-import React, { useContext, createContext, useState} from "react"
-const  StateContext = createContext()
+// import React, { useContext, createContext, useState} from "react"
+// const  StateContext = createContext()
 
-export const StateContextProvider = ({ children }) =>{
-  const [test, setTest] = useState<string>("adult")
+// export const StateContextProvider = ({ children }) =>{
+//   // const [test, setTest] = useState<string>("adult")
 
-  return (
-    <StateContext.Provider value={{
-      test,
-    }}>
-      {children}
-    </StateContext.Provider>
-  )
-}
+//   return (
+//     <StateContext.Provider value={{
+//       // test,
+//     }}>
+//       {children}
+//     </StateContext.Provider>
+//   )
+// }
 
-export const useStateContext = () => useContext(StateContext)
+// export const useStateContext = () => useContext(StateContext)
