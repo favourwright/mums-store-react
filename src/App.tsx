@@ -1,12 +1,29 @@
-// import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { Nav } from './components'
+import {
+  Home,
+  Account,
+  Favorite,
+  Cart,
+  Search
+} from './pages'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
-    <>
-      hello world
-    </>
+    <div
+      className="h-screen flex bg-white dark:bg-secondary text-secondary dark:text-white">
+      <Nav />
+      <main className='flex-1 overflow-y-auto'>
+        <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/me" element={<Account />} /> 
+          <Route path="/favorite" element={<Favorite />} /> 
+          <Route path="/cart" element={<Cart />} /> 
+          <Route path="/search" element={<Search />} /> 
+        </Routes>
+      </main>
+    </div>
   )
 }
 

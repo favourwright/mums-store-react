@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'vastago';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('vastago'), url('./assets/font/vastago_grotesk/VastagoGrotesk-Black.otf') format('otf');
+}
+@font-face {
+  font-family: 'vastago';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('vastago'), url('./assets/font/vastago_grotesk/VastagoGrotesk-Bold.otf') format('otf');
+}
+@font-face {
+  font-family: 'vastago';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('vastago'), url('./assets/font/vastago_grotesk/VastagoGrotesk-SemiBold.otf') format('otf');
+}
+@font-face {
+  font-family: 'vastago';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('vastago'), url('./assets/font/vastago_grotesk/VastagoGrotesk-Medium.otf') format('otf');
+}
+@font-face {
+  font-family: 'vastago';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('vastago'), url('./assets/font/vastago_grotesk/VastagoGrotesk-Regular.otf') format('otf');
+}
+@font-face {
+  font-family: 'vastago';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('vastago'), url('./assets/font/vastago_grotesk/VastagoGrotesk-Thin.otf') format('otf');
+}
+
+.vastago, .vastago *{ font-family: 'vastago'; }
