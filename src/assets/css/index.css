@@ -15,42 +15,40 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url('assets/font/vastago_grotesk/VastagoGrotesk-Black.otf') format('opentype');
+  src: url('../font/vastago_grotesk/VastagoGrotesk-Black.otf') format('opentype');
 }
 @font-face {
   font-family: 'vastago';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('assets/font/vastago_grotesk/VastagoGrotesk-Bold.otf') format('opentype');
+  src: url('../font/vastago_grotesk/VastagoGrotesk-Bold.otf') format('opentype');
 }
 @font-face {
   font-family: 'vastago';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('assets/font/vastago_grotesk/VastagoGrotesk-SemiBold.otf') format('opentype');
+  src: url('../font/vastago_grotesk/VastagoGrotesk-SemiBold.otf') format('opentype');
 }
 @font-face {
   font-family: 'vastago';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('assets/font/vastago_grotesk/VastagoGrotesk-Medium.otf') format('opentype');
+  src: url('../font/vastago_grotesk/VastagoGrotesk-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: 'vastago';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('assets/font/vastago_grotesk/VastagoGrotesk-Regular.otf') format('opentype');
+  src: url('../font/vastago_grotesk/VastagoGrotesk-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'vastago';
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url('assets/font/vastago_grotesk/VastagoGrotesk-Thin.otf') format('opentype');
+  src: url('../font/vastago_grotesk/VastagoGrotesk-Thin.otf') format('opentype');
 }
-
-.vastago, .vastago *{ font-family: 'vastago'; }

@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className='w-full py-layout px-10'>
       <div className=''>
-        <h1 className='text-6xl font-bold inline-flex flex-col'>
+        <h1 className='text-6xl font-bold inline-flex flex-col font-vastago'>
           <span>LET'S FIND THE</span>
           <span className='bg-secondary dark:bg-primary text-primary dark:text-secondary rounded-lg px-2'>BEST EQUIPMENT</span>
           <span>FOR YOU</span>
