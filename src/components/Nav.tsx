@@ -44,7 +44,7 @@ const SideNav = ({ className }: Props)=>{
           className={`w-12 h-12 rounded-full
           bg-secondary/10 hover:bg-secondary/20 dark:bg-white/10 hover:dark:bg-white/20
           transition-all duration-300 flex items-center justify-center border border-transparent
-          ${(loction.pathname==='/me' && 'border-secondary dark:border-white')}`}>
+          ${(loction.pathname==='/me' && '!border-secondary dark:!border-white')}`}>
           <Icon icon="ph:user" className='text-2xl' />
         </Link>
       </div>
