@@ -17,6 +17,9 @@ export default {
       fontFamily: {
         vastago: ["vastago"],
       },
+      fontSize: {
+        clamp: "clamp(2rem, 5vw, 3.75rem)",
+      },
     },
   },
   plugins: [],

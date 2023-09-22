@@ -1,8 +1,6 @@
-import { ReactNode } from "react"
-
 interface Props {
   className?: string
-  children: ReactNode | ReactNode[]
+  children: JSX.Element | JSX.Element[]
 }
 
 const ScrollSection = ({ className, children }: Props) => {
