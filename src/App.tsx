@@ -5,7 +5,8 @@ import {
   Account,
   Favorite,
   Cart,
-  Search
+  Search,
+  ProductDetails
 } from './pages'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/favorite" element={<Favorite />} /> 
           <Route path="/cart" element={<Cart />} /> 
           <Route path="/search" element={<Search />} /> 
+          <Route path="/detail/:id" element={<ProductDetails />} /> 
         </Routes>
       </main>
     </div>
