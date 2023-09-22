@@ -42,8 +42,8 @@ const SideNav = ({ className }: Props)=>{
 
       <div onClick={()=>setIsOpen(prev=>!prev)} className='sm:hidden relative z-30'>
         <Icon
-          icon={ isOpen ? 'solar:close-square-line-duotone' : 'solar:hamburger-menu-line-duotone' }
-          className='text-5xl dark:text-primary'
+          icon={ isOpen ? 'iconamoon:close-light' : 'solar:hamburger-menu-line-duotone' }
+          className='text-5xl'
         />
       </div>
       
