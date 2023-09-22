@@ -15,7 +15,7 @@ const Home = () => {
       <section className='px-10'>
         <h1 className='text-clamp leading-tight font-bold inline-flex flex-col font-vastago'>
           <span>LET'S FIND THE</span>
-          <span className='bg-secondary dark:bg-primary text-primary dark:text-secondary rounded-lg px-2'>BEST EQUIPMENT</span>
+          <span className='bg-secondary dark:bg-primary text-primary dark:text-secondary rounded-lg px-2'>BEST ACCESSORY</span>
           <span>FOR YOU</span>
         </h1>
       </section>
