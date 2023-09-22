@@ -48,7 +48,8 @@ const SideNav = ({ className }: Props)=>{
       </div>
       
       <div
-        className='fixed sm:static flex-1 flex flex-col z-20 inset-0 pointer-events-none'>
+        className='fixed sm:static flex-1 flex flex-col z-20 inset-0
+        pointer-events-none overflow-y-auto'>
         <div
           onClick={()=>setIsOpen(false)}
           className={`${isOpen ? 'pointer-events-auto backdrop-blur-sm' : 'pointer-events-none'}

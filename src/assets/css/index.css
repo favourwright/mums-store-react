@@ -10,6 +10,12 @@
   display: none;
 }
 
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 @font-face {
   font-family: 'vastago';
   font-style: normal;

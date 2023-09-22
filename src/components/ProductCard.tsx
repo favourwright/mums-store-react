@@ -17,10 +17,15 @@ const ProductCard = ({ className, id, image, name, rating=(0.0), price, currency
     console.log('favoriting...')
     setIsFavorited((prev)=>(!prev))
   }
+  const handleAddToCart = ()=>{
+    console.log('adding to cart...')
+    setIsInCart((prev)=>(!prev))
+  }
 
   const [isFavorited, setIsFavorited] = useState(false)
+  const [isInCart, setIsInCart] = useState(false)
   const secondaryBtnList = [
-    { name:'cart', icon:'solar:bag-4-outline', onClick:()=>{} },
+    { name:'cart', icon: isInCart?'solar:bag-check-bold':'solar:bag-4-outline', onClick:()=>handleAddToCart() },
     { name:'favorite', icon: isFavorited?'ph:heart-fill':'ph:heart', onClick:()=>handleFavorite() },
   ]
   
@@ -42,8 +47,7 @@ const ProductCard = ({ className, id, image, name, rating=(0.0), price, currency
       after:absolute after:inset-0 after:border after:border-secondary/10 after:dark:border-white/10
       hover:after:border-transparent hover:after:bg-complementary/30 hover:after:dark:bg-complementary/10
       after:rounded-3xl after:transition-all after:duration-300 hover:after:shadow-2xl relative
-      hover:after:shadow-black/10 hover:dark:after:shadow-black/20 hover:after:scale-105
-      `}
+      hover:after:shadow-black/10 hover:dark:after:shadow-black/20 hover:after:scale-105`}
       title={name}>
       <div
         className='w-full h-full relative flex flex-col gap-3 z-10
@@ -72,9 +76,7 @@ const ProductCard = ({ className, id, image, name, rating=(0.0), price, currency
               title={currency+priceWithDecimals}>
               {currency+priceWithDecimals}
             </div>
-            <div className='flex gap-2'>
-              {secondaryBtns}
-            </div>
+            <div className='flex gap-2'>{secondaryBtns}</div>
           </div>
         </div>
       </div>
