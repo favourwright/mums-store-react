@@ -55,7 +55,7 @@ const ProductCard = ({ className, id, image, name, rating=(0.0), price, currency
             src={image} alt={name}
             className="h-full w-full object-center object-cover"
           />
-          <Link to={`/detail/${id}`} className='absolute inset-0 z-10'></Link>
+          <Link to={`?product/${id}`} className='absolute inset-0 z-10'></Link>
         </div>
 
         <div className="px-5 pb-5 space-y-3 flex-1 flex flex-col justify-between">

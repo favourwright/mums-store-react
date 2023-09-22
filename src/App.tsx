@@ -6,14 +6,13 @@ import {
   Favorite,
   Cart,
   Search,
-  ProductDetails
 } from './pages'
 
 function App() {
 
   return (
     <div
-      className="h-screen flex bg-white dark:bg-secondary text-secondary dark:text-white">
+      className="h-[100dvh] flex bg-white dark:bg-secondary text-secondary dark:text-white">
       <Nav />
       <main className='flex-1 overflow-y-auto'>
         <Routes>
@@ -22,7 +21,6 @@ function App() {
           <Route path="/favorite" element={<Favorite />} /> 
           <Route path="/cart" element={<Cart />} /> 
           <Route path="/search" element={<Search />} /> 
-          <Route path="/detail/:id" element={<ProductDetails />} /> 
         </Routes>
       </main>
     </div>
