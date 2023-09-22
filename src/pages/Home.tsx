@@ -11,17 +11,19 @@ const Home = () => {
   ))
 
   return (
-    <div className='w-full py-layout'>
-      <section className='px-10'>
+    <div className='w-full py-layout-mobile-y sm:py-layout-y'>
+      <section className='px-layout-mobile-x sm:px-layout-x'>
         <h1 className='text-clamp leading-tight font-bold inline-flex flex-col font-vastago'>
           <span>LET'S FIND THE</span>
-          <span className='bg-secondary dark:bg-primary text-primary dark:text-secondary rounded-lg px-2'>BEST ACCESSORY</span>
+          <span className='bg-secondary dark:bg-primary text-primary dark:text-secondary rounded-lg px-2'>BEST ACCESSORIES</span>
           <span>FOR YOU</span>
         </h1>
       </section>
 
       <section className=''>
-        <ScrollableSection className='gap-8 px-10 py-20 scroll-px-10'>
+        <ScrollableSection
+          className='gap-4 sm:gap-8 px-layout-mobile-x sm:px-layout-x py-20
+          scroll-px-[20px] sm:scroll-px-10'>
           {prodList}
         </ScrollableSection>
       </section>

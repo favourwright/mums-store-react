@@ -70,7 +70,7 @@ const ProductCard = ({ className, id, image, name, rating=(0.0), price, currency
               text-secondary dark:text-primary
               opacity-80 group-hover:opacity-100 truncate"
               title={currency+priceWithDecimals}>
-              {currency}{priceWithDecimals}
+              {currency+priceWithDecimals}
             </div>
             <div className='flex gap-2'>
               {secondaryBtns}
