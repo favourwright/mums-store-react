@@ -12,13 +12,16 @@ export default {
         'complementary': '#C0C0C0', // silver
       },
       padding: {
-        layout: '60px',
+        'layout-y': '60px',
+        'layout-mobile-y': '40px',
+        'layout-x': '40px',
+        'layout-mobile-x': '20px',
       },
       fontFamily: {
         vastago: ["vastago"],
       },
       fontSize: {
-        clamp: "clamp(2rem, 5vw, 3.75rem)",
+        clamp: "clamp(1.8rem, 5vw, 3.75rem)",
       },
     },
   },

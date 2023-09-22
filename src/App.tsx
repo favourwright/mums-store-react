@@ -12,7 +12,8 @@ function App() {
 
   return (
     <div
-      className="h-[100dvh] flex bg-white dark:bg-secondary text-secondary dark:text-white">
+      className="h-[100dvh] flex flex-col sm:flex-row
+      bg-white dark:bg-secondary text-secondary dark:text-white">
       <Nav />
       <main className='flex-1 overflow-y-auto'>
         <Routes>
