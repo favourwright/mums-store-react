@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Icon } from '@iconify/react';
 import useScrollLimitDetector from '../utils/useScrollLimitDetector'
 
