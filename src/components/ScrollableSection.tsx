@@ -14,7 +14,7 @@ const ScrollSection = ({ className, children }: Props) => {
     detectScrollLimits,
   } = useScrollLimitDetector()
 
-  const scrollableContainer = useRef<null | HTMLDivElement>(null)
+  const scrollableContainer = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
   const scrollX = (direction: 'prev' | 'next') => {
     const container = scrollableContainer.current as HTMLDivElement
     const scrollBy = window.innerWidth < 768 ? 300 : 1200
@@ -37,7 +37,7 @@ const ScrollSection = ({ className, children }: Props) => {
       className='rounded-full bg-secondary/10 hover:bg-secondary/20
       dark:bg-white/10 hover:dark:bg-white/20 transition-all duration-300
       flex items-center justify-center p-1 px-3 pointer-events-auto
-      disabled:opacity-50 disabled:cursor-not-allowed'>
+      disabled:opacity-30 disabled:cursor-not-allowed'>
       <Icon icon={icon} className='text-4xl' />
     </button>
   ))
